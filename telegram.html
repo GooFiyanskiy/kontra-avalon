@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KONTRA — Telegram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0c08;--red:#c4341a;--red-bright:#e0431f;--bone:#e8e4d8;--olive-light:#545a41;--tac-green:#8a9a5b;--dim:#7a7a6e;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--bone);font-family:'JetBrains Mono',monospace;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:40px 24px;}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse at center,transparent 40%,rgba(0,0,0,0.8)100%);pointer-events:none;z-index:1;}
+.container{position:relative;z-index:2;max-width:600px;text-align:center;}
+.logo{font-family:'Oswald',sans-serif;font-weight:700;font-size:64px;color:var(--bone);letter-spacing:0.02em;margin-bottom:12px;}
+.logo .accent{color:var(--red-bright);}
+.sub{font-size:14px;color:var(--olive-light);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:48px;}
+.telegram-link{display:inline-block;font-family:'Oswald',sans-serif;font-weight:600;font-size:18px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;color:var(--bone);padding:20px 52px;border:1.5px solid var(--olive-light);transition:all 0.3s ease;position:relative;overflow:hidden;}
+.telegram-link::before{content:"";position:absolute;inset:0;background:var(--red);transform:translateX(-101%);transition:transform 0.35s cubic-bezier(.65,0,.35,1);z-index:-1;}
+.telegram-link:hover{border-color:var(--red-bright);color:#fff;}
+.telegram-link:hover::before{transform:translateX(0);}
+.telegram-link:active{transform:scale(0.96);}
+.back{display:inline-block;margin-top:40px;font-size:12px;color:var(--dim);text-decoration:none;letter-spacing:0.15em;text-transform:uppercase;transition:color 0.3s ease;border-bottom:1px solid transparent;padding-bottom:4px;}
+.back:hover{color:var(--tac-green);border-bottom-color:var(--tac-green);}
+.info{color:var(--dim);font-size:13px;line-height:1.8;margin-top:32px;padding:24px;border:1px solid rgba(138,154,91,0.1);}
+.info strong{color:var(--tac-green);}
+@media (max-width:560px){.logo{font-size:40px;}.telegram-link{width:100%;padding:18px 24px;text-align:center;}}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="logo">KONTRA<span class="accent">.</span></div>
+<div class="sub">Telegram Channel</div>
+<a href="https://t.me/emoj_11" target="_blank" rel="noopener" class="telegram-link">Перейти в Telegram</a>
+<div class="info">
+<strong>Ссылка:</strong> https://t.me/emoj_11<br>
+Присоединяйся к сообществу KONTRA!
+</div>
+<a href="index.html" class="back">← На главную</a>
+</div>
+</body>
+</html>
